@@ -1,0 +1,20 @@
+ 
+        <h3>Enter your task here</h3> </center>
+        <input type="text" id="task" placeholder="enter task"/>
+            <button onclick="task()">submit task</button>
+    <ul id ="List"></ul>
+            
+    <script type="text/javascript">
+       function task() {
+        var list = document.getElementById("List");
+        var value = document.getElementById("task").value;
+       var li  = document.createElement("LI");
+       var textNode = document.createTextNode(value);
+       li.appendChild(textNode);
+       list.appendChild(li);
+       }
+   
+    </script>
+    </body>
+    
+</html>
